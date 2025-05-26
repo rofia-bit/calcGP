@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculateur de Moyenne - Génie de Matière</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="wrapper">
+    <div class="container">
+      <h1> CalcGP</h1>
+      <form id="gradeForm">
+
+        <div class="module">
+    <label>Informatique</label>
+    <input type="number" id="info_exam" placeholder="Note Examen">
+    <input type="number" id="info_ca" placeholder="Note TD/TP">
+    <div id="info_moy" class="moyenne-display"></div>
+  </div>
+
+        <div class="module">
+          <label for="lang_exam">Langue etrangere 2</label>
+          <input type="number" id="lang_exam" placeholder="Examen">
+          <div id="lang_moy" class="moyenne-display"></div>
+        </div>
+
+        <div class="module">
+          <label for="metier_exam"> Métier de science et tech 2 </label>
+          <input type="number" id="metier_exam" placeholder="Examen">
+          <div id="metier_moy" class="moyenne-display"></div>
+        </div>
+
+        <div class="module">
+          <label for="math_ca">Mathématiques 2</label>
+          <input type="number" id="math_ca" placeholder="Contrôle Continu">
+          <input type="number" id="math_exam" placeholder="Examen">
+          <div id="math_moy" class="moyenne-display"></div>
+        </div>
+
+        <div class="module">
+          <label for="meth_exam">Méthodologie de la presentation</label>
+          <input type="number" id="meth_exam" placeholder="Examen">
+          <div id="meth_moy" class="moyenne-display"></div>   
+        </div>
+
+        <div class="module">
+          <label for="phy_ca">Physique 2</label>
+          <input type="number" id="phy_ca" placeholder="Contrôle Continu">
+          <input type="number" id="phy_exam" placeholder="Examen">
+          <div id="phy_moy" class="moyenne-display"></div>
+        </div>
+
+        <div class="module">
+          <label for="thermo_ca">Thermodynamique </label>
+          <input type="number" id="thermo_ca" placeholder="Contrôle Continu">
+          <input type="number" id="thermo_exam" placeholder="Examen">
+          <div id="thermo_moy" class="moyenne-display"></div>
+        </div>
+
+        <button type="button" onclick="calculate()">Calculer la Moyenne</button>
+
+        <div id="result"></div>
+      </form>
+    </div>
+  </div>
+
+  <footer class="footer">
+  by rofia
+</footer>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
+
